@@ -1,0 +1,67 @@
+.adminnav{
+    position: relative;
+    width: 100%;
+    margin: none;
+    height: 2.8rem;
+    background-color: #313866;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    z-index: 4;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+
+.adminnav h3{
+    color: white;
+}
+
+.admin-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.admin-dashboard{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width:80%;
+    height:75vh;
+    box-sizing: border-box;
+    place-items: center;
+    gap: 20px;
+}
+
+
+.admin-dashboard div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:230px;
+    height: 230px;
+    
+    border: 1px solid #40F8FF;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    transition: scale 0.4s ease;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-decoration: none;
+    color:black;
+}
+
+.admin-dashboard div:active{
+    scale: 0.95;
+}
+
+.link{
+    text-decoration: none;
+}
+
+

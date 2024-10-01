@@ -1,0 +1,59 @@
+.complaintpage{
+    display: flex;
+    justify-content: center;  
+}
+
+.complaintpage h3{
+    font-size: x-large;
+    color: red;
+    align-self: center;
+}
+
+.complaintform{
+    width: 700px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.complaintform label{
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.complaintform input{
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.complaintform .desc{
+    width: 97%;
+    height: 100px;
+}
+
+.complaintform select{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.complaintform button{
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(28, 201, 60);
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    transition: scale 0.4s ease;
+}
+
+.complaintform button:active{
+    scale: 0.9;
+}
