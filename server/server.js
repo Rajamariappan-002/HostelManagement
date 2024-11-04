@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const userModel = require('./Model/UserModel')
 const AdminModel = require('./Model/AdminModel')
 const RoomModel = require('./Model/RoomModel')
-const BookingModel = require('./Model/BookingModel');
+const BookingModel = require('./Model/BookingModel')
 const ComplaintModle = require('./Model/ComplaintModel')
 const cors = require('cors')
 
@@ -12,7 +12,7 @@ app.use(cors())
 
 app.use(express.json())
 
-mongoose.connect("mongodb://localhost:27017/BookStore").then(()=>{
+mongoose.connect("mongodb+srv://Raja:raji2002@ecommerce.fhki0.mongodb.net/").then(()=>{
     console.log('MongoDb connection successful')
 })
 
@@ -42,6 +42,7 @@ app.post("/loginuser", async (req,res)=>{
     try{
         const finduser = await userModel.findOne({email:email, password:password})
         if (finduser){
+            console.log(finduser)
             res.json({status:"success", message:"User Login Successful",user:{email:finduser.email, name:finduser.name}})
         }
         else{

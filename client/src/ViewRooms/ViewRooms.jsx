@@ -22,6 +22,7 @@ const ViewRooms = () => {
         axios.get("http://localhost:3001/viewrooms").then((response)=>{
                 try{
                     setRooms(response.data.Rooms)
+                    
                 }catch(e){
                     console.log(e)
                 }              
